@@ -9,8 +9,26 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack(content: {
+            Spacer()
+
+            Image("agrawalharsh90")
+                .resizable().aspectRatio(contentMode:.fit)
+            Spacer()
+
+            HStack(content: {
+                Spacer()
+                Text("Hello!")
+                Spacer()
+                Text("World!")
+                Spacer()
+
+            })
+            Spacer()
+
+        })
+            
+        
     }
 }
 
